@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--<meta name="viewport" content="width=de-vice-width,initial-scale=1" charset="utf-8"/>-->
+    <!--监测横竖屏-->
+    <!--width=de-vice-width   可以指定一个值如：600 或者de-vice-width设备宽度 -->
+    <!--height=device-width 可以指定一个值如：500 或者使用device-height设备的高度-->
+    <!--initial-scale 初始缩放比例，也就是当页面第一次load时候的比例-->
+    <!--user-scalable=no 是否允许用户手动缩放比例-->
+    <!--maximun-scale=1.0 允许用户缩放的最大比例-->
+    <meta name="viewport" content="width=de-vice-width,initial-scale=1,user-scalable=no,maximum-scale=1.0" charset="utf-8">
+    <title>H5V1.0</title>
+    <link rel="stylesheet" href="./css/jqcss2.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+    <script src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">-->
+    <!--<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>-->
+</head>
+<body>
+<!--page1-->
+<div id="page1" data-role="page" data-theme="f">
+    <div data-role="header" data-theme="f"></div>
+    <div data-role="content" style="margin-top: 30px">
+        <div id="LoginPhoto">
+            <img src="./Images/touxiang.jpg">
+        </div>
+        <p>&nbsp;</p>
+        <input type="text" id="userName" placeholder="username">
+        <input type="password" id="pwssWord" placeholder="password">
+        <a href="#page2" data-theme="b" data-icon="arrow-r" data-transition="slidedown">
+            <p id="loginP">登&nbsp;录</p>
+        </a>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="f">
+        <div class="footerAlink">
+            <!--turn-->
+            <a class="notLogin" data-role="none" href="#page3" data-transition="none">无法登陆？</a>
+            <a class="newUser" data-role="none" href="#">新用户</a>
+        </div>
+    </div>
+    <!--用户名错误弹出提示框-->
+    <div id="dialogDiv">
+        <div>
+            123
+        </div>
+    </div>
+</div>
+<!--page2-->
+<div id="page2" data-role="page" data-theme="c">
+    <div data-role="header" data-theme="b">
+        <!--data-position="fixed" style="position: fixed;"-->
+        <a href="#" data-icon="grid" data-role="button">首页</a>
+        <h1>珠峰JS前端公告</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li id="li_1"><a href="#">前端资讯<span class="ui-li-count">3</span></a></li>
+            <div class="liDiv">
+                <img src="Images/5.jpg">
+                <span style="letter-spacing: 1px;"></span>
+            </div>
+            <div class="liDiv">
+                <img src="Images/3.jpg">
+                <span style="letter-spacing: 1px;"></span>
+            </div>
+            <div class="liDiv">
+                <img src="Images/4.jpg">
+                <span style="letter-spacing: 1px;"></span>
+            </div>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+            <li><a href="#">网校公告<span class="ui-li-count">35</span></a></li>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+            <li><a href="#">网校公告<span class="ui-li-count">35</span></a></li>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+            <li><a href="#">网校公告<span class="ui-li-count">35</span></a></li>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+            <li><a href="#">网校公告<span class="ui-li-count">35</span></a></li>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+            <li><a href="#">网校公告<span class="ui-li-count">35</span></a></li>
+            <li><a href="#">热门课程</a></li>
+            <li><a href="#">推荐课程</a></li>
+        </ul>
+        <div id="goTop">TOP</div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed" style="position: fixed;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page1" data-icon="home">首页</a></li>
+                <li><a href="#" data-icon="grid">日历</a></li>
+                <li><a href="#" data-icon="search">通讯录</a></li>
+                <li><a href="#" data-icon="star">邮件</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Register page3 手机注册页面-->
+<div id="page3" data-role="page" data-theme="f">
+    <!--style="background-color: #08A3DB;"-->
+    <div data-role="header" data-theme="f">
+        <h1 class="page3H1" style="margin: 0px;">找回密码</h1>
+        <!--data-role="button"-->
+        <a href="#page1" data-role="button" data-icon="arrow-l" data-iconpos="left"
+           data-transition="none" style="color: white;">
+            <!--flow-->
+            返回
+        </a>
+    </div>
+    <div data-role="content">
+        <div>
+            <p>&nbsp;</p>
+            <input id="phoneId" type="text" data-role="text" placeholder="请输入你的手机号码" style="height: 32px;">
+            <a href="#" data-theme="b" data-icon="arrow-r"><p id="register">下一步</p></a>
+        </div>
+    </div>
+    <!--style="background-color:white;"-->
+    <div data-role="footer" data-position="fixed" data-theme="f">
+        <h1>&nbsp;</h1>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    //slideToggle
+    $(function () {
+        $('.liDiv span').html('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>每次要用到js的date对象，总是要百度，这个对象其实不难理解，但是毕竟多函数，完全记下来需要点技巧，今天在这里记下，后面用到就可以直接找了。获取时间对象：newDate()获取,每次要用到js的date对象,每次要用到js的date对象，总是要百度，这个对象其实不难理解，但是毕竟多函数，完全记下来需要点技巧，今天在这里记下，后面用到就可以直接找了。获取时间对象：newDate()获取,每次要用到js的date对象，总是要百度,每次要用到js的date对象，总是要百度，这个对象其实不难理解，但是毕竟多函数，完全记下来需要点技巧，今天在这里记下，后面用到就可以直接找了.');
+        $('#li_1').click(function () {
+            $('.liDiv').slideToggle('50');
+        });
+    });
+
+    var goTop = document.getElementById('goTop');
+    var curH = document.documentElement.clientHeight || document.body.clientHeight;
+    function fn() {
+        var scT = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scT >= curH/2) {
+            $(goTop).show();
+        } else {
+            $(goTop).hide();
+        }
+    }
+    window.onscroll = fn;
+    goTop.onclick = function () {
+        window.onscroll = null;
+        $(this).hide();
+        move();
+    }
+    var timer = null;
+    function move(){
+        window.clearTimeout(timer);
+        if (document.body.scrollTop === 0) {
+            window.onscroll = fn;
+            return;
+        }
+        document.body.scrollTop -= 100;
+        timer = window.setTimeout(move, 10);
+    }
+</script>
