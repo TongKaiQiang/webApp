@@ -1,1 +1,53 @@
-﻿12345
+[33mcommit c5b5d5fa6365c9fa99cc34b82f403fa262e02824[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Tue Aug 25 12:12:09 2015 +0800
+
+    2015年8月25日12:11:56 add 1.txt
+
+[33mcommit e793d6c86ec488a4b6271a66bd4e6a92c6ce3303[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Tue Aug 25 11:24:48 2015 +0800
+
+    add 1.txt
+
+[33mcommit ff9bda993f0a96c3b8ec508d2b99954f845b7c12[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Tue Aug 25 11:23:13 2015 +0800
+
+    add 1.txt
+
+[33mcommit 778bd82933c5f3d174d4f5f10d0d13d88f53b70e[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Sun Aug 23 10:07:03 2015 +0800
+
+    add git
+
+[33mcommit b082400fb1d0876379c15f24c8c9b8fa0f2edd7a[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Sun Aug 23 10:03:35 2015 +0800
+
+    remove 1.txt
+
+[33mcommit 3b08b7ce7aab1e2d7d266362de37c8ccee93dd13[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Sat Aug 22 22:09:53 2015 +0800
+
+    submit update name
+
+[33mcommit ddf719045d1c77e1c5cdaca9b5952dbdbc4cf4ac[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Sat Aug 22 20:55:41 2015 +0800
+
+    我上传了移动web学习项目
+
+[33mcommit f03ec2ee487f5cc6dc6f3f9a3883aed86638ff6b[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Sat Aug 22 20:05:49 2015 +0800
+
+    test
+
+[33mcommit 87495f8e8d6b42bfa8d8848e1bbdf4333eba39f3[m
+Author: TongKaiQiang <net_tkq920812@foxmail.com>
+Date:   Fri Aug 21 03:14:09 2015 +0800
+
+    Initial commit
