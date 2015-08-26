@@ -35,44 +35,36 @@ git配置
    
    创建本地分支：
    git branch develop
-   
+  
    删除本地分支
    git branch -d develop
-
 6、切换分支
    git checkout develop
    切换到develop分支
-
 7、从远程服务器更新文件到本地
    git  pull
-
 8、添加/删除一个文件
    添加一个新文件:
    git add  newfile
    删除一个文件
    git rm  file
-
 9、提交修改
    git commit -m "message modify"
    注意：
    此时的提交只是修改了本地缓存，并没有提交到远程服务器
-
 10、提交修改到远程服务器
    git push
    此时可以去git web上查看文件更新
-
+======================2015年8月25日15:39:10===========
 11、$ mkdir  aa 创建文件夹(make directory)
 12、$ cd  aa  进入文件夹(change directory)
 13、$ pwd  打印当前文件夹路径(print working directory)
-
 14、$ ls -al
 15、$ ls -ah
-
 16、$ git commit 1.txt -m "add 1.txt 2015年8月25日11:25:21"
 17、$ git commit 1.txt （进入一个窗口）
        :!q退出
 18、$ touch 2.txt  创建文件(工作区)
-
 19、$ cat 1.txt （查看文件内容）
 20、$ git diff （分析工作区和暂存区的区别）
 21、$ git diff --cached（分析工作区和历史记录区别）
@@ -90,3 +82,18 @@ git配置
 32、复制文件  （标记后-回车）
 33、$ git log --after-2015-08-24  查看历史记录（从2015-08-24到今天）
 34、$ git remote add sshgit git@github.com:TongKaiQiang/webApp.git（关联仓库）
+35、$ git branch dev 创建分支
+36、$ git branch  所有分支
+37、$ git checkout dev (切换分支)
+38、$ git merge dev（合并分支）
+       $ git merge --no--ff -m"禁用分支自动合并"  dev（合并分支）	
+39、$ git branch -d dev（删除分支）
+40、$ git checkout -b dev（创建并切换分支）
+
+
+npm install grunt-cli -g
+
+npm install grunt
+
+npm install grunt --save
+
