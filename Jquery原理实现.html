@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    document.ready = function (callback) {
+        //兼容标准浏览器
+        if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', function () {
+                document.removeEventListener('DOMContentLoaded', arguments.callee, false);
+                callback();
+            }, false);
+        }//兼容IE
+        else if (document.attachEvent) {
+            document.attachEvent('onreadystatechange', function () {
+                if (document.readyState == "complete") {
+                    document.detachEvent('onreadystatechange', arguments.callee);
+                    callback();
+                }
+            });
+        } else if (document.lastChild == document.body) {
+            callback();
+        }
+    }
+
+    window.onload = function () {
+        console.log('load');
+    }
+
+    document.ready(function () {
+        console.log('ready');
+    });
+
+</script>
+</body>
+</html>
